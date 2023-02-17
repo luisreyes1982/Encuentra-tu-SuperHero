@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentra tu SuperHero</title>
+    <!-- Jquery 3.5.1 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- Bootstrap 4.6.5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Mis Archivos -->
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/svg" href="assets/img/favicon.ico">
+    <!-- Mi Scritp JS -->
+    <script src="./assets/js/script.js"></script>
+    <!-- Mi Estilo CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <!-- 1.- Estructura Basica HTML -->
+
+    <!-- 2.- Navbar -->
+    <header class="text-center">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/favicon.ico" width="40" height="40" class="d-inline-block align-content-center"
+                        alt="">
+                    SuperHero
+                </a>
+            </div>
+        </nav>
+
+    <!-- 2.- Imagen Pagina y Titulo Principal -->
+        <div class="pt-5">
+            <img class="col-12 col-sm-6" src="./assets/img/sh1.jpg">
+        </div>
+        <h1>Encuentra tu SuperHero</h1>
+    </header>
+
+    <!-- 2.- Formulario Para Captar la Data -->
+    <section>
+        <form>
+            <div class="pt-2 m-auto w-50">
+                <div>
+                    <label>Ingrese el número del SuperHero a buscar:</label>
+                </div>
+                <div>
+                    <input class="form-control" type="text" pattern="\d*" placeholder="Digita del 1 al 731"
+                        id="heroInput">
+                    <button id="boton" class="btn btn-primary mt-4 d-block" type="submit">Buscar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- 3.7- Tarjeta y Diagrama del Heroe Seleccionado -->
+    <section class="container pt-5">
+        <div class="row no-gutters">
+            <div class="col-sm" id="tarjetaHeroe"></div>
+            <div class="col-sm" id="textoHeroe"></div>
+            <div class="col-sm" id="graficoHeroe" style="height: 300px; width: 200%;"></div>
+        </div>
+    </section>
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+
+</html>
